@@ -1,23 +1,43 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
-
 <div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
+  <h4>Thread Time Manager</h4>
   <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
+    How many things can you do at once? One! This application organizes your day into 20 minute chunks with built in breaks.
+    Focus on one thing at a time and add new tasks to the end of the thread.
   </p>
-
-  <h4>Angular</h4>
+  <h5>Get Started!</h5>
   <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
+    To start with thread, add a task via the form below.
   </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+</div>
+</div class="thread-container container">
+<div class="row">
+  <div class="col-xs-6">
+  </br>
+    <form>
+      <div class="form-group">
+        <label for="taskName">Task Name: </label>
+        <input type="text" class="form-control" id="taskName" />
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <h5>Upcoming Tasks</h5>
+    <ul class="list-group">
+      <li class="list-group-item">Task 1</li>
+      <li class="list-group-item">Task 2</li>
+      <li class="list-group-item">Task 3</li>
+    </ul>
+  </div>
+  <div class="col-xs-6">
+    <div class="timer-area">
+      <h1>20:00</h1>
+      <p class="alert alert-info">Current Task: Task 0</p>
+      <h5>Completed Tasks</h5>
+      <ul class="list-group">
+        <li class="list-group-item">Task -1</li>
+        <li class="list-group-item">Task -2</li>
+        <li class="list-group-item">Task -3</li>
+      </ul>
+    </div>
+  </div>
+  </row>
 </div>
